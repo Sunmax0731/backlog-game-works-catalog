@@ -1,0 +1,90 @@
+{
+  "product": "backlog-game-works-catalog",
+  "generatedAt": "2026-05-07T23:58:32Z",
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "records": [
+        {
+          "title": "積みゲーム・作品カタログ",
+          "platform": "積みゲーム・作品カタログ platform",
+          "nextAction": "次に消化する作品候補を理由付きで並べる",
+          "reason": "積みゲーム・作品カタログ reason",
+          "reviewDate": "積みゲーム・作品カタログ reviewDate",
+          "id": "hp-001"
+        }
+      ],
+      "expected": {
+        "passes": 1,
+        "failures": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "missing-required",
+      "records": [
+        {
+          "platform": "積みゲーム・作品カタログ platform",
+          "nextAction": "次に消化する作品候補を理由付きで並べる",
+          "reason": "積みゲーム・作品カタログ reason",
+          "reviewDate": "積みゲーム・作品カタログ reviewDate",
+          "id": "missing-001"
+        }
+      ],
+      "expected": {
+        "passes": 0,
+        "failures": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "warning",
+      "records": [
+        {
+          "title": "積みゲーム・作品カタログ",
+          "platform": "積みゲーム・作品カタログ platform",
+          "nextAction": "次に消化する作品候補を理由付きで並べる",
+          "reviewDate": "積みゲーム・作品カタログ reviewDate",
+          "id": "warn-001"
+        }
+      ],
+      "expected": {
+        "passes": 0,
+        "failures": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "id": "mixed-batch",
+      "records": [
+        {
+          "title": "積みゲーム・作品カタログ",
+          "platform": "積みゲーム・作品カタログ platform",
+          "nextAction": "次に消化する作品候補を理由付きで並べる",
+          "reason": "積みゲーム・作品カタログ reason",
+          "reviewDate": "積みゲーム・作品カタログ reviewDate",
+          "id": "mixed-ok-001"
+        },
+        {
+          "title": "積みゲーム・作品カタログ",
+          "platform": "積みゲーム・作品カタログ platform",
+          "reason": "積みゲーム・作品カタログ reason",
+          "reviewDate": "積みゲーム・作品カタログ reviewDate",
+          "id": "mixed-bad-001"
+        },
+        {
+          "title": "積みゲーム・作品カタログ",
+          "platform": "積みゲーム・作品カタログ platform",
+          "nextAction": "次に消化する作品候補を理由付きで並べる",
+          "reviewDate": "積みゲーム・作品カタログ reviewDate",
+          "id": "warn-001"
+        }
+      ],
+      "expected": {
+        "passes": 1,
+        "failures": 1,
+        "warnings": 1
+      }
+    }
+  ]
+}
