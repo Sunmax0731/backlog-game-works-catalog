@@ -1,0 +1,14 @@
+{
+  "product": "backlog-game-works-catalog",
+  "title": "積みゲーム・作品カタログ",
+  "domain": "AndroidApp",
+  "ideaNo": 13,
+  "platformType": "android-emulator",
+  "expectedPublicTarget": "Google Play",
+  "browser": null,
+  "android": {
+    "packageName": "com.sunmax0731.backloggameworkscatalog",
+    "evidence": "dist/android-emulator-result.json"
+  },
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
